@@ -1,1 +1,58 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+    background-color: green;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  #card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card {
+    width: 100px;
+    height: 140px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    position: relative;
+    background-color: white;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-value-suit {
+    font-size: 20px;
+    position: absolute;
+  }
+  
+  .card-value-suit.top {
+    top: 5px;
+    left: 5px;
+  }
+  
+  .card-value-suit.bot {
+    transform: rotate(180deg);
+    bottom: 5px;
+    right: 5px;
+  }
+
+  .card.hearts,
+  .card.diamonds {
+   color: red;
+  }
+
+  .card-suit {
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%; /* Agora posiciona o símbolo na horizontal no centro */
+    transform: translate(-50%, -50%); /* Ajuste para centralizar completamente */
+  }
